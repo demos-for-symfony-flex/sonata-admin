@@ -36,7 +36,7 @@ install:
 - composer install
 
 script:
-- php -S 127.0.0.1:8000 -t public & printf 'HEAD / HTTP/1.1\r\n\r\n' | socat - TCP4:localhost:8000,forever # Waiting for server to connect.
+- php -S 127.0.0.1:8000 -t public >/dev/null & printf 'HEAD / HTTP/1.1\r\n\r\n' | socat - TCP4:localhost:8000,forever # Waiting for server to connect.
 - elinks http://localhost:8000/admin/dashboard -dump-color-mode 4 -dump
 
 after_script:
