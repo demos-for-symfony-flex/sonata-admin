@@ -42,7 +42,7 @@ script:
 after_script:
 - ls --color
 
-- composer show
+- composer show --latest
 - $GOPATH/bin/ccat composer.json
 
 - composer require --no-scripts sensiolabs/security-checker
