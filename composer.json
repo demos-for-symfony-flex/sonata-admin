@@ -4,7 +4,7 @@
     "license": "MIT",
     "description": "A minimal Symfony Framework Flex project",
     "require": {
-        "sonata-project/doctrine-orm-admin-bundle": "^3",
+        "sonata-project/admin-bundle": "^3",
         "symfony/flex": "^1.0",
         "symfony/yaml": "^3.4 || ^4.0"
     },
