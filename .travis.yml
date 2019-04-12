@@ -30,8 +30,6 @@ matrix:
       apt:
         packages:
         - libonig2
-  - php: 7.4
-    dist: xenial
   allow_failures:
   - php: nightly
 
