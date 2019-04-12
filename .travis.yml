@@ -26,6 +26,10 @@ matrix:
   include:
   - php: nightly
     dist: xenial
+    addons:
+      apt:
+        packages:
+        - libonig2
   allow_failures:
   - php: nightly
 
