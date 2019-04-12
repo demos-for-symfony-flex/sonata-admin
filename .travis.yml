@@ -12,7 +12,6 @@ cache:
 
 php:
 # - nightly # see matrix
-- 7.4
 - 7.3
 - 7.2
 - 7.1
@@ -31,6 +30,8 @@ matrix:
       apt:
         packages:
         - libonig2
+  - php: 7.4
+    dist: xenial
   allow_failures:
   - php: nightly
 
