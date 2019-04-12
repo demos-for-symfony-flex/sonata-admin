@@ -20,12 +20,12 @@ php:
 env:
   global:
   - COMPOSER_MEMORY_LIMIT=-1
+
 matrix:
+  fast_finish: true
   include:
   - php: nightly
     dist: xenial
-matrix:
-  fast_finish: true
   allow_failures:
   - php: nightly
 
